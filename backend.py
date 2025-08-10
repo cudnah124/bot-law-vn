@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from gemini_1 import answer_with_context
-
+import os
 app = Flask(__name__)
 CORS(app)
+
+port = int(os.environ.get("PORT", 5000))
 
 # API trả lời câu hỏi
 @app.route('/ai_answer', methods=['POST'])
@@ -30,4 +32,4 @@ def index():
     return render_template("chat.html")
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host="0.0.0.0", port=port)
