@@ -8,9 +8,6 @@ import time
 from dotenv import load_dotenv
 import os
 
-#GUI
-import gradio as gr
-
 load_dotenv()
 MAX_CHARS = 2000
 api_key = os.getenv("GENAI_API_KEY")
