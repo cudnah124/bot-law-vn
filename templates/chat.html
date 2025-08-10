@@ -147,7 +147,7 @@
             
             async function getAIResponse(userMessage) {
                 try {
-                    const res = await fetch("http://127.0.0.1:5000/ai_answer", {
+                    const res = await fetch("https://bot-law-vn.onrender.com/ai_answer", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({ text: userMessage })
