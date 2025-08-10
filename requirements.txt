@@ -1,0 +1,6 @@
+google-genai
+faiss-cpu
+python-dotenv
+numpy
+flask_cors
+flask
