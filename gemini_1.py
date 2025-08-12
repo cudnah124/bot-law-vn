@@ -115,7 +115,7 @@ def answer_with_context(user_q: str):
         {context}
 
         Yêu cầu:
-        1. Nếu câu hỏi không hỏi hay bàn về vấn đề pháp luật. Trả lời "Tôi chỉ giải quyết các vấn đề về pháp luật"
+        
         2. Nếu người dùng hỏi về tín đúng đắn hay sai trái của luật thì đưa ra các cách kiểm tra cho người dùng. Không trả lời 1 cách chắc chắn
         3. Nếu người dùng hỏi về nội dung luật pháp về vấn đề gì thì sử dụng dữ liệu trong Ngữ cảnh. Không sửa đổi hay bổ sung thêm
         4. Không thêm bất kì lưu ý hay nhắc nhờ về nội dung trong Ngữ cảnh
